@@ -1,32 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
+<!--saved from url=(0014)about:internet-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--meta http-equiv="X-UA-Compatible" content="ie=edge"-->
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <meta name="author" content="Paúl Romero">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-        <title>Portafolio - Paúl Romero</title>
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <title>Portafolio | Paul Romero</title>
     </head>
-    <body>
-        <div class="contenedor">
+    <body class="hidden">
+        <div class="container-lds" id="onldr">
+            <div class="lds-ellipsis"></div>
+        </div>
+        <div class="container-body">
             <header>
                 <div class="present">
-                    <h1>Hi, I'm Paul Romero</h1>
-                    <p>Desarrollador web/movil</p>
+                    <h1>Hello, I'm Pa&uacute;l Romero 👋</h1>
+                    <h3>Ing. Telem&aacute;tica student</h3>
                 </div>
             </header>
         </div>
         <div class="left-menu">
             <ul>
-                <h2 class="folders">Proyectos</h2>
-                <img class="folders" src="Recursos/icon_folders.png" width="80px" height="80px"><br>
-                <h2 class="files">Códigos</h2>
-                <img class="files" src="Recursos/icon_files.png" width="80px" height="80px"><br>
-                <h2 class="certs">Certificaciones</h2>
-                <img class="certs" src="Recursos/icon_certificates.png" width="80px" height="80px">
+                <a href="#"><div class="folders">
+                    <img id="folders" src="Recursos/icon_folders.png" alt="Proyects" width="80px" height="80px"><br>
+                    <h2>Proyects</h2>
+                </div></a>
+            </ul>
+            <ul>
+                <a href="#"><div class="files">
+                    <img id="files" src="Recursos/icon_files.png" alt="CV" width="80px" height="80px"><br>
+                    <h2>Curriculum</h2>
+                </div></a>
+            </ul>
+            <ul>
+                <a href="#"><div class="certs">
+                    <img id="certs" src="Recursos/icon_certificates.png" alt="Certificates" width="80px" height="80px"><br>
+                    <h2>Certificates</h2>
+                </div></a>
             </ul>
         </div>
     </body>
+    <footer class="container-foot">
+        <div class="contacts">
+            <br><p>Contact:</p><br>
+            <a href="#" id="btn-open-popup"><img class="email" src="Recursos/icon_email.png" width="25px" height="25px"></a>
+            <a href="https://github.com/Paul-Romero" target="_blank"><img class="github" src="Recursos/icon_github.png" width="25px" height="25px"></a>
+            <a href="https://www.linkedin.com/in/pa%C3%BAl-romero-alvarado-4b38861bb/" target="_blank"><img class="linkedin" src="Recursos/icon_linkedin.png" width="25px" height="25px"></a>
+        </div>
+        <div class="design-by">
+            <p>Web site created by <a href="#">Pa&uacute;l Romero</a>.</p>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="pop-up" id="popup">
+                <a href="#" id="btn-close-popup" class="btn-close-popup"><i class="fas fa-times"></i></a>
+                <form action="send-mail.php" method="post">
+                    <div class="container-form">
+                        <strong>From: </strong><input type="email" name="from" id="email-from" placeholder="user@example.com" required maxlength="35">
+                        <strong>To: </strong><input type="email" name="to" id="email-to" value="paul-andre2000@hotmail.com" maxlength="35">
+                        <strong>Messagge: </strong><input name="subject" id="email-subject" required maxlength="200">
+                    </div>
+                    <input type="button" value="Send 📬" class="submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
 </html>

@@ -1,0 +1,75 @@
+$Backgnd-slide: #FFFB05D5;
+$Backgnd-page: #F3F3F3;
+.pop-up form .submit {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: $Backgnd-page;
+    background-color: $Backgnd-slide;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: "Recursive", sans-serif;
+    transition: .3s ease all;
+}
+.pop-up form .submit:hover { background-color: rgba($color: #FFFB05, $alpha: .6) }
+.overlay {
+    background-color: rgba($color: black, $alpha: .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.overlay.active { visibility: visible; }
+.pop-up {
+    background: $Backgnd-page;
+    box-shadow: 6px 0px 5px 0px rgba($color: black, $alpha: .3);
+    border-radius: 3px;
+    font-family: "Recursive", sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    opacity: 0;
+    transition: .3s ease all;
+    transform: scale(0.75);
+}
+.pop-up .btn-close-popup {
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: gray;
+    transition: .3s ease all;
+}
+.btn-close-popup:hover { color: $Backgnd-slide;}
+.pop-up form .container-form input {
+    width: 150;
+    height: 50px;
+    line-height: 50px;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid gray;
+}
+.pop-up.active {
+    opacity: 1;
+    transform: scale(1);
+}
+.pop-up.active form .container-form strong {
+    opacity: 0;
+    animation: animText .6s ease .5s forwards;
+}
+@keyframes animText {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
