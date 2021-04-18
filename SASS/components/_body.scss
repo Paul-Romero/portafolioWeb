@@ -10,9 +10,15 @@ body {
     max-width: 800px;
     margin: auto;
 }
+.left-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: auto;
+}
 .folders{
     color: black;
-    cursor: alias;
+    cursor: alias pointer;
     padding: 15px;
     margin: 2px;
     size: 5px;
@@ -56,7 +62,7 @@ body {
 }
 .files{
     color: black;
-    cursor: alias;
+    cursor: alias pointer;
     padding: 15px;
     margin: 2px;
     size: 5px;
@@ -100,7 +106,7 @@ body {
 }
 .certs{
     color: black;
-    cursor: alias;
+    cursor: alias pointer;
     padding: 15px;
     margin: 2px;
     size: 5px;
@@ -141,4 +147,37 @@ body {
     transform: scaleX(1);
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+//Projects page
+.projects-body .project-1{
+    display: flex;
+    justify-content: flex-start;
+}
+.projects-body .project-1 .project-1-img{
+    margin: 10px;
+    padding: 20px 0;
+}
+.projects-body .project-1 .project-1-context{
+    margin-top: 5px;
+    padding: 20px 0;
+}
+.projects-body .project-2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+}
+.projects-body .project-2 .project-2-img{
+    margin: 10px;
+    padding: 20px 0;
+}
+.projects-body .project-2 .project-2-context{
+    margin-top: 5px;
+    padding: 20px 0;
+}
+//Certs page
+.certs-body {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 20px 0;
 }

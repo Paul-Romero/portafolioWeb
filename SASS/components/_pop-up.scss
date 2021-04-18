@@ -46,14 +46,21 @@ $Backgnd-page: #F3F3F3;
     color: gray;
     transition: .3s ease all;
 }
-.btn-close-popup:hover { color: $Backgnd-slide;}
+.btn-close-popup:hover { color: $Backgnd-slide; }
 .pop-up form .container-form input {
-    width: 150;
+    width: 180px;
     height: 50px;
     line-height: 50px;
     margin: 20px;
     text-align: center;
+    font-family: "Recursive", sans-serif;
     border: 1px solid gray;
+}
+.pop-up form .container-form .email-subject {
+    width: 360px;
+    line-height: 80px;
+    height: 80px;
+    text-align: center justify;
 }
 .pop-up.active {
     opacity: 1;

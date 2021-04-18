@@ -1,11 +1,11 @@
 <?php
-    $origin = $_POST["from"];
-    $target = $_POST["to"];
-    $subject = $_POST["subject"];
+    $origin = $_POST['from'];
+    $target = $_POST['to'];
+    $subject = $_POST['subject'];
 
-    echo "De: ".$origin." Para: ".$target;
+    //echo "De: ".$origin." Para: ".$target;
 
-    /* $header = "From: ".$origin."\r\n";
+    $header = "From: ".$origin."\r\n";
     $header .= "X-Mailer: PHP/".phpversion()."\r\n";
     $header .= "Mime-Version: 1.0 \r\n";
     $header .= "Content-Type: text/plain";
@@ -15,6 +15,10 @@
     $message .= "Fecha: ".date('d/m/y',time());
     $topic = "Portafolio Mail-box";
 
-    mail($target,$topic,utf8_decode($message),$header);
-    header("Location:index.html"); */
+    if(mail($target,$topic,utf8_decode($message),$header)){
+        echo "Correo enviado";
+    }else{
+        echo "Ocurrió un erorr";
+    }
+    header("Location:index.html");
 ?>
