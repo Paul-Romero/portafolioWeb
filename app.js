@@ -16,3 +16,4 @@ btnClosePopUp.addEventListener('click', function() {
     overlay.classList.remove('active');
     popUp.classList.remove('active');
 });
+//Carrusel certs
