@@ -4,7 +4,7 @@ window.onload = function(){
     $('body').removeClass('hidden');
 }
 //Ventana emergente email
-var btnOpenPopUp = document.getElementById("btn-open-popup"),
+/*var btnOpenPopUp = document.getElementById("btn-open-popup"), //id="btn-open-popup" -> html
     overlay = document.getElementById("overlay"),
     popUp = document.getElementById("popup"),
     btnClosePopUp = document.getElementById("btn-close-popup");
@@ -15,5 +15,5 @@ btnOpenPopUp.addEventListener('click', function() {
 btnClosePopUp.addEventListener('click', function() {
     overlay.classList.remove('active');
     popUp.classList.remove('active');
-});
+});*/
 //Carrusel certs
