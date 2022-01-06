@@ -6,22 +6,25 @@ body {
     font-family: "Recursive", sans-serif;
 }
 .container-body {
-    width: 90%;
+    width: 100%;
     max-width: 900px;
     margin: auto;
 }
 .overview {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-direction: row;
     margin: 15px;
     width: auto;
 }
 .overview .left-menu {
-    margin-right: 60%;
+    margin-right: 50%;
 }
 .overview .right-desc {
-    margin-right: 20%;
+    margin-right: 10%;
+    width: 50%;
+    text-align: justify;
+    font-size: 18px;
 }
 .folders{
     color: black;
@@ -344,4 +347,42 @@ body {
         max-width: calc(100% - 140px);
         margin: 0 auto;
     }
+}
+h2.SS {
+    text-align: center;
+    margin: 0; padding: 0;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px $Backgnd-slide;
+}
+.skillbox {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px 0;
+}
+.skillbox p {
+    color: black;
+    text-transform: uppercase;
+    margin: 0 0 10px 10px;
+    padding: 0;
+    letter-spacing: 1px;
+}
+.skillbox p:nth-child(2) {
+    float: right;
+    position: relative;
+    top: -25px;
+}
+.skill_level {
+    background: #e1b12c;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid gainsboro;
+    border-radius: 50px;
+}
+.level {
+    background: $Backgnd-slide;
+    width: 100%;
+    height: 10px;
+    border-radius: 50px;
 }
