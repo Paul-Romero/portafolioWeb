@@ -1,2 +1,4 @@
-# portafolioWeb
-Proyecto de portafolio web
+# Portafolio Web
+Aquí encontrarás un compendio de mi trabajo, habilidades y experiencia en un diseño elegante y fácil de navegar.
+Te invito a explorar mis proyectos más destacados, que están cuidadosamente organizados en la sección "Trabajos". Cada proyecto cuenta con una descripción detallada, capturas de pantalla y enlaces a las páginas web correspondientes.
+Si deseas comunicarte conmigo para discutir una colaboración, una oportunidad laboral o simplemente hacer una consulta, puedes hacerlo a través de la sección de contacto. Estoy siempre dispuesto a escuchar tus ideas y ofrecerte soluciones adaptadas a tus necesidades.

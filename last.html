@@ -1,0 +1,104 @@
+<!--saved from url=(0014)about:internet-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+        <!--meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--meta http-equiv="X-UA-Compatible" content="ie=edge"-->
+        <meta name="author" content="Paúl Romero"/>
+        <link rel="icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;500&amp;display=swap"/>
+        <link rel="stylesheet" href="CSS/styles.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <title>Portafolio | Pa&uacute;l Romero</title>
+    </head>
+    <body class="hidden">
+        <div class="container-lds" id="onldr">
+            <div class="lds-ellipsis">
+                <div></div>
+            </div>
+        </div>
+        <div class="container-body">
+            <header>
+                <div class="present">
+                    <h1>Hello, I'm Pa&uacute;l Romero 👋</h1>
+                    <h3>Telematics engineer</h3>
+                </div>
+            </header>
+        </div>
+        <div class="overview">
+            <div class="left-menu">
+                <div>
+                    <a href="../portafolioWeb/Projects/projects.html">
+                        <div class="folders">
+                            <img id="folders" src="Recursos/icon_folders.png" alt="Projects" width="80px" height="80px"/></br>
+                            <h2>Projects</h2>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="../portafolioWeb/Recursos/resume.pdf" download="RomeroPaulCV.pdf">
+                        <div class="files">
+                            <img id="files" src="Recursos/icon_files.png" alt="CV" width="80px" height="80px"/></br>
+                            <h2>Resume</h2>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="../portafolioWeb/Certs/certs.html">
+                        <div class="certs">
+                            <img id="certs" src="Recursos/icon_certificates.png" alt="Certificates" width="80px" height="80px"/></br>
+                            <h2>Certificates</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="right-desc">
+                <div class="about">
+                    <p>I characterize myself as a flexible person committed to developing my career by specifying
+                        technological solutions, I am always excited to learn and face new challenges.</p>
+                </div>
+                <br>
+                <div class="skills">
+                    <div class="skill">HTML</div>
+                    <div class="skill">CSS</div>
+                    <div class="skill">javascript</div>
+                    <div class="skill">PHP</div>
+                    <div class="skill">SASS</div>
+                    <div class="skill">SQL Basic</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">Flask</div>
+                    <div class="skill">Django</div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer class="container-foot">
+        <div class="contacts">
+            <p>Contact:</p><br>
+            <a href="mailto:paulromero800@gmail.com&Subject=Portafolio%20Mail-Box" aria-label="email"><img class="email" src="Recursos/icon_email.png" alt="email" width="25px" height="25px"/></a>
+            <a href="https://github.com/Paul-Romero" aria-label="github" target="_blank"><img class="github" src="Recursos/icon_github.png" alt="github" width="25px" height="25px"/></a>
+            <a href="https://www.linkedin.com/in/promeroa/" aria-label="linkedin" target="_blank"><img class="linkedin" src="Recursos/icon_linkedin.png" alt="linkedin" width="25px" height="25px"/></a>
+            <div class="design-by">
+                <p>Website created by <a href="index.html">Pa&uacute;l Romero</a>.</p>
+            </div>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="pop-up" id="popup">
+                <a href="#" id="btn-close-popup" class="btn-close-popup" style="width: 10; height: 15;"><i class="fas fa-times"></i></a>
+                <form action="send-mail.php" method="post">
+                    <div class="container-form">
+                        <strong>From: </strong><input type="text" name="from" id="email-from" placeholder="user@example.com" required maxlength="35">
+                        <strong>To: </strong><input type="text" name="to" id="email-to" value="paulromero800@gmail.com" maxlength="35">
+                        <strong>Messagge: </strong><input type="text" class="email-subject" name="subject" id="email-subject" required maxlength="200" width="225">
+                    </div>
+                    <input type="button" value="Send 📬" class="submit">
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="app.js"></script>
+    </footer>
+</html>
